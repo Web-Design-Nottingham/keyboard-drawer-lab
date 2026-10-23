@@ -1,0 +1,22 @@
+{
+  "name": "keyboard-drawer-lab",
+  "version": "0.1.0",
+  "description": "A navigation drawer reference with keyboard tests, focus handling and reduced-motion examples.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "check": "node --test && node scripts/build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Web-Design-Nottingham/keyboard-drawer-lab.git"
+  },
+  "homepage": "https://webdesignnottingham.uk/"
+}

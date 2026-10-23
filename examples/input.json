@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Open with Enter or Space",
+    "Tab and Shift+Tab remain in the modal",
+    "Escape closes the drawer",
+    "Focus returns to the menu trigger",
+    "Scroll position is restored"
+  ]
+}
