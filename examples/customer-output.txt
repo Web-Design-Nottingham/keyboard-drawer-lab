@@ -1,0 +1,19 @@
+Example Nottingham Studio: accessibility review
+
+Based on the tasks you tried, not an automated scan.
+
+Changes to discuss
+- Visible keyboard position: Ask for a clear focus style on every interactive element.
+- Larger text: Share the page and browser zoom level where content overlaps or disappears.
+
+Check next
+- Helpful form errors: Check that errors identify the field and explain how to correct it without losing other answers.
+
+What worked in your check
+- Keyboard access worked in your check.
+- Form labels worked in your check.
+- Readable text worked in your check.
+
+Share useful evidence
+- Add the page address and a short description of each problem when sending this list to your designer.
+- A full review should also include assistive technology and user testing.

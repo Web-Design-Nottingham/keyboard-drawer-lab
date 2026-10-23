@@ -3,9 +3,10 @@
   "org": "Web-Design-Nottingham",
   "brand": "Nottingham Web Design",
   "slug": "keyboard-drawer-lab",
-  "title": "Keyboard Drawer Lab",
+  "title": "Website Accessibility Walkthrough",
   "profile": "Practical accessible website design and open-source navigation examples. Operated by JW Digital Services Ltd.",
-  "accent": "#174b3a",
-  "tint": "#eaf3eb",
-  "summary": "A navigation drawer reference with keyboard tests, focus handling and reduced-motion examples."
+  "accent": "#2e643f",
+  "tint": "#eaf1e8",
+  "summary": "Try six everyday tasks on your own website, then leave with a clear list of things to improve.",
+  "brandMark": "<svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 38V18L22 4l18 14v20M10 38V21m24 17V21M17 38V23a5 5 0 0 1 10 0v15\"/></svg>"
 }

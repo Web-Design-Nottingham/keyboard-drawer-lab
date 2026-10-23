@@ -1,60 +1,51 @@
-# Keyboard Drawer Lab
+# Website Accessibility Walkthrough
 
-Keyboard Drawer Lab is a navigation drawer you can open, inspect and test using only a keyboard. It includes focus restoration, Escape handling, reduced motion and a practical test checklist.
+Try six everyday tasks on your own website, then leave with a clear list of things to improve.
 
-Copy the small example or adapt it to a static website. The documented tests describe what has been checked, rather than promising accessibility certification. Maintained by [Nottingham Web Design](https://webdesignnottingham.uk/), operated by JW Digital Services Ltd.
+**For Nottingham business owners. No coding knowledge needed.**
 
-![Complete example](docs/preview.png)
+[Open the free tool](https://web-design-nottingham.github.io/keyboard-drawer-lab/) · [See a fictional worked example](https://web-design-nottingham.github.io/keyboard-drawer-lab/examples/customer-output.html)
 
-## Live demo
+![Desktop preview](docs/preview.png)
 
-[Try Keyboard Drawer Lab](https://web-design-nottingham.github.io/keyboard-drawer-lab/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+## How to use it
 
-## Start locally
+1. Open the tool in your browser. No installation or account is needed.
+2. Use your own business details in the labelled fields, or choose **Try a fictional example**.
+3. Choose **Create my review list** and review the result.
+4. Adjust your answers, then copy the result, download a text file or choose **Print / Save PDF**.
 
-Requires Node.js 22 or later. No runtime dependencies or account required.
+A practical list to share with your website designer.
+
+## What to expect
+
+Open your website in another tab. Try each task yourself and choose what happened. You do not need to know how the site was built.
+
+These are introductory checks. They do not establish accessibility compliance or replace a full accessibility review.
+
+Your answers are processed in the browser tab. They are not uploaded, emailed or saved by the tool. Refreshing or closing the tab clears them. Save your result before leaving. GitHub provides hosting and handles normal request logs. Example details are fictional, not customer results.
+
+## Design and maintenance
+
+The interface uses the colours, typography and visual treatment of [Nottingham Web Design](https://webdesignnottingham.uk/). The tool is maintained by Nottingham Web Design, operated by JW Digital Services Ltd. The commercial website is a separate project.
+
+Further reading: [W3C WAI introductory accessibility checks](https://www.w3.org/WAI/test-evaluate/easy-checks/).
+
+## For developers
+
+The customer tool uses native HTML controls and small browser modules, with no runtime framework. Its planning or calculation rules are in `src/customer.js`; presentation helpers are in `src/customer-ui.js`.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm test
 npm run build
 npm run serve
 ```
 
-Open http://127.0.0.1:4173/ for the complete local demonstration. Browser examples do not upload or persist entered data. The optional development server binds to loopback only.
+Open the local address printed by the server. `npm run build:pages` prepares the static GitHub Pages artifact. Tests cover the customer rules and output escaping.
 
-## Input and output
+The original v0.1 developer helpers remain in `src/index.js` for compatibility, with their original examples. They are not needed to use the customer tool. The existing repository name and Pages URL are retained so earlier links keep working.
 
-The complete example uses a native modal dialog enhanced by a small module. Navigation remains visible when JavaScript is unavailable. The event log records control IDs, not entered text.
+## Licence and feedback
 
-Use [examples/input.json](examples/input.json) as the complete input contract. Compare the generated [JSON result](examples/output.json), [Markdown report](examples/output.md) and [complete HTML](examples/output.html). The demo is in [demo/index.html](demo/index.html). It needs the local server for JavaScript modules. HTML reports can be opened as standalone files.
-
-```sh
-node cli.mjs examples/input.json --format json
-node cli.mjs examples/input.json --format html --output report.html
-node cli.mjs examples/input.json --format md --output report.md
-```
-
-This resource uses nested JSON input. See the complete example and `node cli.mjs --help`.
-
-## Worked example
-
-Use a fictional community workshop with four navigation items and a contact action. Include a long menu label, a small viewport, an embedded page anchor and a test page with enough content to scroll. This gives the drawer real conditions rather than an isolated empty overlay.
-
-All supplied example records are synthetic. No clients, outcomes, current professional advice or real service availability are represented by them. Keep real records private and review output before sharing it.
-
-## Checks
-
-- Enter and Space operate the menu trigger. Focus enters the drawer, stays appropriately contained, and returns to the trigger on close.
-- Escape, explicit close and navigation selection behave consistently. Hidden links are absent from the active keyboard sequence.
-- Scroll locking restores the previous scroll position. Opening the drawer at 200% and 400% zoom does not lose its close control.
-- Test Chromium, Firefox and WebKit, 320 px width, reduced motion and keyboard-only use. Record actual manual screen-reader checks separately.
-- With JavaScript unavailable, visitors still have a usable navigation fallback. Example CSS does not hide all navigation before enhancement.
-
-The automated results and browser checks performed for this release are recorded in [verification.md](docs/verification.md). Manual screen-reader testing has not been performed. A passing automated check is not accessibility certification.
-
-## Contribute and maintain
-
-Use [Issues](https://github.com/Web-Design-Nottingham/keyboard-drawer-lab/issues) for a reproducible bug and [Discussions](https://github.com/Web-Design-Nottingham/keyboard-drawer-lab/discussions) for questions and improvements. Follow [CONTRIBUTING.md](CONTRIBUTING.md); report vulnerabilities privately using [SECURITY.md](SECURITY.md). See [CHANGELOG.md](CHANGELOG.md) for releases. Maintenance is best effort.
-
-Code, original illustrations and synthetic fixtures are MIT licensed. There is no required website backlink when reusing the resource. Commercial brand assets and third-party material are not included.
+MIT for tool code. Bundled typefaces retain their original licence notices in `demo/assets/font-licences`. [Ideas and feedback](https://github.com/Web-Design-Nottingham/keyboard-drawer-lab/discussions/1).
