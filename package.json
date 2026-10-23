@@ -1,6 +1,6 @@
 {
   "name": "keyboard-drawer-lab",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Try six everyday tasks on your own website, then leave with a clear list of things to improve.",
   "type": "module",
   "private": false,
