@@ -6,6 +6,10 @@ Copy the small example or adapt it to a static website. The documented tests des
 
 ![Complete example](docs/preview.png)
 
+## Live demo
+
+[Try Keyboard Drawer Lab](https://web-design-nottingham.github.io/keyboard-drawer-lab/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+
 ## Start locally
 
 Requires Node.js 22 or later. No runtime dependencies or account required.
